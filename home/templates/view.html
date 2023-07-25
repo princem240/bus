@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="{% static 'css/view.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica&family=Josefin+Sans:wght@700&family=Open+Sans&family=Plus+Jakarta+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div class="d1">
+        <a href="/" class="a1">Home</a>
+        <a href="/bookings"class="a1">Bookings</a>
+        <a href="/about"class="a1">About</a>
+        <a href="/contact"class="a1">Contact</a>
+        {% if user.is_authenticated %}
+        <a href="" class="alog">{{user.username}}</a>
+        <a href="/logout" class="logout">logout</a>
+        {% else %}
+        <a href="/login"class="alog">Login</a>
+        {%endif%}
+    </div>
+    <form action="/filter" method="post">
+    {% csrf_token  %}
+    <div class="d2">
+        <div class="dfrom"><h2 class="d2h1">From</h2>
+        <select name="from" id="cars" required="required" class="select1">
+            <option disabled selected value> ---- </option>
+            <option value="Kottayam">Kottayam</option>
+            <option value="Thrissur">Thrissur</option>
+            <option value="Kozhikode">Kozhikode</option>
+            <option value="Trivandrum">Trivandrum</option>
+          </select>
+        </div>
+        <div class="d21"></div>
+        <div class="dfrom"><h2 class="d2h1">To</h2>
+            <select name="to" id="cars" required="required" class="select1">
+                <option disabled selected value> ---- </option>
+                <option value="Kottayam">Kottayam</option>
+                <option value="Thrissur">Thrissur</option>
+                <option value="Kozhikode">Kozhikode</option>
+                <option value="Trivandrum">Trivandrum</option>
+            </select>
+            </div>
+            <div class="d21"></div>
+            <div><h2 class="d2h1">Date</h2><input type="date" class="d2date"  required="required" name="date"></div>
+            <input type="submit" value="Search" class="d2search">
+            
+    </div>
+</form>
+    {% for i in b %}
+    <div class="d3">
+       
+        <div class="d4">
+            <div class="d5">
+                <div style="display: flex;">
+                <h2 class="d5h1">{{i.name}}</h2>
+            </div>
+                <div style="display: flex;">
+                <h2 class="d5h2">{{i.From}}</h2>
+                <i class="fa-solid arrow fa-arrow-right-long"></i>
+                <h2 class="d5h3">{{i.To}}</h2>
+            </div>
+            <div style="display: flex;">
+                <h2 class="d5h4">{{i.timefrom}}</h2>
+                <h2 class="d5h5">-</h2>
+                <h2 class="d5h6">{{i.timeto}}</h2>
+            </div>  
+            </div>
+            <div style="display: flex;justify-content:space-between;"><h2 class="d5h7">Duration:{{i.duration}}</h2>
+            <a href="/book/{{i.id}}" style="margin-right:2% ;"><input type="submit" value="Book" class="d5book"></a>
+            </div><br>
+            <h2 class="d5h8">5 Seats Available</h2>
+
+
+        </div>
+        
+
+
+
+
+        
+    </div>
+    {%endfor%}
+
+</html>

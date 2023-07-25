@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+<link rel="stylesheet" href="{% static 'css/book.css' %}">
+<script src="{% static 'js/jquery.js' %}"></script>
+<body>
+    <div class="showcase">
+        <div class="seat-main"></div>
+        <h4 class="text1">Available</h4>
+        <div class="seat-selected"></div>
+        <h4 class="text1">Selected</h4>
+        <div class="seat-occupied"></div>
+        <h4 class="text1">Booked</h4>
+    </div>
+    <div style="display: flex;">
+    <div class="container">
+        <div class="screen"><i class="fi fi-bs-steering-wheel wheel"></i></div><br>
+        <form method="post" id="book">
+            {% csrf_token %}
+        <div class="row"> 
+            <div class="seat" id="a1">
+                <input type="checkbox"value="#a1" id="seata1" name="check">
+                <label for="seata1"></label>
+            </div>
+            <div class="seat" id="a2">
+                <input type="checkbox"value="#a2" id="seata2" name="check">
+                <label for="seata2"></label>
+            </div>
+            <div class="seat" id="a3">
+                <input type="checkbox"value="#a3" id="seata3" name="check">
+                <label for="seata3"></label>
+            </div>
+            <div class="seat" id="a4">
+                <input type="checkbox"value="#a4" id="seata4" name="check">
+                <label for="seata4"></label>
+            </div>
+            <div class="seat" id="a5">
+                <input type="checkbox"value="#a5" id="seata5" name="check">
+                <label for="seata5"></label>
+            </div>
+            
+        </div>
+        <div class="row"> 
+            <div class="seat" id="a6">
+                <input type="checkbox"value="#a6" id="seata6" name="check">
+                <label for="seata6"></label>
+            </div>
+            <div class="seat" id="a7">
+                <input type="checkbox"value="#a7" id="seata7" name="check">
+                <label for="seata7"></label>
+            </div>
+            <div class="seat" id="a8">
+                <input type="checkbox"value="#a8" id="seata8" name="check">
+                <label for="seata8"></label>
+            </div>
+            <div class="seat" id="a9">
+                <input type="checkbox"value="#a9" id="seata9" name="check">
+                <label for="seata9"></label>
+            </div>
+            <div class="seat" id="a10">
+                <input type="checkbox"value="#a10" id="seata10" name="check">
+                <label for="seata10"></label>
+            </div>
+            
+        </div>
+        <div class="row"> 
+            <div class="seat" id="a11">
+                <input type="checkbox"value="#a11" id="seata11" name="check">
+                <label for="seata11"></label>
+            </div>
+            <div class="seat" id="a12">
+                <input type="checkbox"value="#a12" id="seata12" name="check">
+                <label for="seata12"></label>
+            </div>
+            <div class="seat" id="a13">
+                <input type="checkbox"value="#a13" id="seata13" name="check">
+                <label for="seata13"></label>
+            </div>
+            <div class="seat" id="a14">
+                <input type="checkbox"value="#a14" id="seata14" name="check">
+                <label for="seata14"></label>
+            </div>
+            <div class="seat" id="a15">
+                <input type="checkbox"value="#a15" id="seata15" name="check">
+                <label for="seata15"></label>
+            </div>
+            
+        </div>
+        <div class="row"> 
+            <div class="seat" id="a16">
+                <input type="checkbox"value="#a16" id="seata16" name="check">
+                <label for="seata16"></label>
+            </div>
+            <div class="seat" id="a17">
+                <input type="checkbox"value="#a17" id="seata17" name="check">
+                <label for="seata17"></label>
+            </div>
+            <div class="seat" id="a18">
+                <input type="checkbox"value="#a18" id="seata18" name="check">
+                <label for="seata18"></label>
+            </div>
+            <div class="seat" id="a19">
+                <input type="checkbox"value="#a19" id="seata19" name="check">
+                <label for="seata19"></label>
+            </div>
+            <div class="seat" id="a20">
+                <input type="checkbox"value="#a20" id="seata20" name="check">
+                <label for="seata20"></label>
+            </div>
+            
+        </div>
+        <div class="row"> 
+            <div class="seat" id="a21">
+                <input type="checkbox"value="#a21" id="seata21" name="check">
+                <label for="seata21"></label>
+            </div>
+            <div class="seat" id="a22">
+                <input type="checkbox"value="#a22" id="seata22" name="check">
+                <label for="seata22"></label>
+            </div>
+            <div class="seat" id="a23">
+                <input type="checkbox"value="#a23" id="seata23" name="check">
+                <label for="seata23"></label>
+            </div>
+            <div class="seat" id="a24">
+                <input type="checkbox"value="#a24" id="seata24" name="check">
+                <label for="seata24"></label>
+            </div>
+            <div class="seat" id="a25">
+                <input type="checkbox"value="#a25" id="seata25" name="check">
+                <label for="seata25"></label>
+            </div>
+            
+        </div>
+        <div class="row"> 
+            <div class="seat" id="a26">
+                <input type="checkbox"value="#a26" id="seata26" name="check">
+                <label for="seata26"></label>
+            </div>
+            <div class="seat" id="a27">
+                <input type="checkbox"value="#a27" id="seata27" name="check">
+                <label for="seata27"></label>
+            </div>
+            <div class="seat" id="a28">
+                <input type="checkbox" value="#a28" id="seata28" name="check">
+                <label for="seata28"></label>
+            </div>
+            <div class="seat" id="a29">
+                <input type="checkbox"value="#a29" id="seata29" name="check">
+                <label for="seata29"></label>
+            </div>
+            <div class="seat" id="a30">
+                <input type="checkbox"value="#a30" id="seata30" name="check">
+                <label for="seata30"></label>
+            </div>
+            
+        </div>
+    </div>
+    <div class="d3">
+      <a href="/bookings"><input type="submit" value="confirm" class="submit"></a>
+      <a href="/"><input type="button" value="cancel" class="cancel"></a>
+    </div>
+</form>
+ </div>
+    <p class="text">
+        You have selected  seats    <span id="slots"></span>
+      </p>
+ 
+{%for b in b%}
+<script type="text/javascript">
+    $("{{b.seatno}}").addClass("notvacant").children("input").prop("disabled", true);
+    $("{{b.seatno}}").children("label").remove();
+</script>
+{%endfor%}
+<script type="text/javascript">
+
+
+
+    $(".seat").click(function () {
+      var favorite = [];
+      $.each($("input[name='check']:checked"), function () {
+        favorite.push($(this).val());
+      });
+  
+      $("#slots").empty().append(favorite.join(", "));
+  
+    });
+</script>
+</body>
+</html>

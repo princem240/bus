@@ -1,0 +1,59 @@
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="{% static 'css/bookform.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <form  method="post">
+        {% csrf_token %}
+    <div class="d1">
+        <h2 class="text1">Bus name :</h2>
+        {% render_field  form.name  class="fname" readonly="True" %}
+    </div>
+    <div class="d2">
+        <h2 class="text2">From :</h2>
+        {% render_field  form.From  class="ffrom" readonly="True"%}
+    </div>
+    <div class="d3">
+        <h2 class="text3">To :</h2>
+        {% render_field  form.To  class="fto" readonly="True"%}
+    </div>
+    <div class="d4">
+        <h2 class="text4">Date :</h2>
+        {% render_field  form.date  class="fdate"readonly="True" %}
+    </div>
+    <div class="d5">
+        <h2 class="text5">Price :</h2>
+        {% render_field  form.price  class="fprice" readonly="True"%}
+    </div>
+    <div class="d6">
+        <h2 class="text6">Departure Time :</h2>
+        {% render_field  form.timefrom  class="ftimefrom" readonly="True"%}
+    </div>
+    <div class="d7">
+        <h2 class="text5">Arrival Time :</h2>
+        {% render_field  form.timeto  class="ftimeto" readonly="True" %}
+    </div>
+    </form>
+    <form method="post">
+        {% csrf_token %}
+
+    <div class="d8">
+        <h2 class="text8">No of Seats :</h2>
+        {% render_field  a.seatno  class="fseatno" %}
+    </div>
+    <input type="submit" class="ip1">
+    <a href="/"><input type="button" class="ip2" value="Cancel"></a>
+</form>
+</body>
+</html>

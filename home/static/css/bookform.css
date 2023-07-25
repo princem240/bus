@@ -1,0 +1,212 @@
+
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(115, 115, 216);
+}
+.d1
+{
+ height: 5vh;
+ width:50vw;
+ background-color: rgb(115, 115, 216);
+ margin: 3% 0 0 10%;
+ display: flex;
+}
+
+.text1
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+.fname
+{
+    height:4vh;
+    width: 30vw;
+    margin: 0% 0 0 15%;
+    font-size: larger;
+
+}
+.d2
+{
+ height: 5vh;
+ width:50vw;
+ background-color: rgb(115, 115, 216);
+ margin: 2% 0 0 10%;
+ display: flex;
+}
+
+.text2
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+.ffrom
+{
+    height:4vh;
+    width: 30vw;
+    margin: 0% 0 0 22%;
+    font-size: larger;
+
+}
+.d3
+{
+ height: 5vh;
+ width:50vw;
+ background-color: rgb(115, 115, 216);
+ margin: 2% 0 0 10%;
+ display: flex;
+}
+
+.text3
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+.fto
+{
+    height:4vh;
+    width: 30vw;
+    margin: 0% 0 0 26%;
+    font-size: larger;
+
+}
+.d4
+{
+ height: 5vh;
+ width:50vw;
+ background-color: rgb(115, 115, 216);
+ margin: 2% 0 0 10%;
+ display: flex;
+}
+
+.text4
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+.fdate
+{
+    height:4vh;
+    width: 30vw;
+    margin: 0% 0 0 22.5%;
+    font-size: larger;
+
+}
+.d5
+{
+ height: 5vh;
+ width:50vw;
+ background-color: rgb(115, 115, 216);
+ margin: 2% 0 0 10%;
+ display: flex;
+}
+
+.text5
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+.fprice
+{
+    height:4vh;
+    width: 30vw;
+    margin: 0% 0 0 22%;
+    font-size: larger;
+
+}
+.d6
+{
+ height: 5vh;
+ width:50vw;
+ background-color: rgb(115, 115, 216);
+ margin: 2% 0 0 10%;
+ display: flex;
+}
+
+.text6
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+.ftimefrom
+{
+    height:4vh;
+    width: 30vw;
+    margin: 0% 0 0 6%;
+    font-size: larger;
+
+}
+.d7
+{
+ height: 5vh;
+ width:50vw;
+ background-color: rgb(115, 115, 216);
+ margin: 2% 0 0 10%;
+ display: flex;
+}
+
+.text7
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+.ftimeto
+{
+    height:4vh;
+    width: 30vw;
+    margin: 0% 0 0 11%;
+    font-size: larger;
+
+}
+.d8
+{
+ height: 5vh;
+ width:50vw;
+ background-color: rgb(115, 115, 216);
+ margin: 2% 0 0 10%;
+ display: flex;
+}
+
+.text8
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+.fseatno
+{
+    height:4vh;
+    width: 30vw;
+    margin: 0% 0 0 12%;
+    font-size: larger;
+
+}
+.ip1
+{
+    margin: 3% 0 0 15%;
+    height: 7vh;
+    width:10vw;
+    border-radius: 25px;
+    background-color: rgb(241, 73, 73);
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: white; 
+}
+.ip2
+{
+    height: 7vh;
+    width:10vw;
+    border-radius: 25px;
+    background-color: rgb(241, 73, 73);
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: white;
+}

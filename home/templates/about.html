@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica&family=Josefin+Sans:wght@700&family=Open+Sans&family=Plus+Jakarta+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div class="d1">
+        <a href="/" class="a1">Home</a>
+        <a href="/bookings"class="a1">Bookings</a>
+        <a href="/about"class="a1">About</a>
+        <a href="/contact"class="a1">Contact</a>
+        {% if user.is_authenticated %}
+        <a href="" class="alog">{{user.username}}</a>
+        <a href="/logout" class="logout">logout</a>
+        {% else %}
+        <a href="/login"class="alog">Login</a>
+        {%endif%}
+    </div>
+    <p class="pg">Millions of people book bus tickets daily to reach their destination points like office, school, college, shopping centers, hospitals, etc. 
+        The large volumes of incoming requests definitely take lots of time to process and confirm by phone.
+        Bus ticket booking and reservation allows you to fully automate the bus ticket booking process and facilitate hundreds of bookings daily.
+    </p>
+
+    <p class="pg"><p class="pg">
+        BestBus provide customers with a personalized easy-to-utilize user experience for booking and purchasing tickets online. 
+        It stores customers’ personal data records, scheduled routes, frequent trips, drop points, and other information.
+        You can implement real-time seat availability, multiple payment gateways, offer seat map functionality, and other features. 
+        A transport booking eliminates human factor risks and improves conversion rates for your business.
+    </p>
+
+    </p>

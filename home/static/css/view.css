@@ -1,0 +1,232 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.d1
+{
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.a1
+{
+    margin: 2% 0 0 5%;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: larger;
+    color: rgb(10, 9, 9);
+}
+.a1:hover
+{
+    color: rgb(140, 140, 255);
+}
+.alog
+{
+    margin: 2% 0 0 51%;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: larger;
+    color: rgb(8, 7, 7);
+}
+.alog:hover
+{
+    color: rgb(134, 134, 255); 
+}
+.logout
+{
+    margin: 2% 0 0 2%;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: larger;
+    color: rgb(8, 7, 7);
+}
+.logout:hover
+{
+    color: rgb(134, 134, 255); 
+}
+.d2
+{
+    height: 21vh ;
+    width:75vw;
+    background-color: rgb(238, 98, 94);
+    margin: 8% 0 0 10%;
+    border-radius:  38px;
+    display: flex;
+    margin-bottom:8% ;
+}
+.dfrom
+{
+   margin-left: 2%;
+}
+.d2h1
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 4% 0 0 8%;
+    font-size: xx-large;
+}
+.select1
+{
+    height:8vh;
+    width:17vw;
+    margin:2% 0 0 5%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    border: none;
+    outline: none;
+}
+
+.d21
+{
+    height: 20.5vh;
+    border: 2px solid black;
+    width:0px;
+    margin: 0 0 0 5%;
+}
+.d2date
+{
+    height: 7vh;
+    width: 12vw;
+    background-color: rgb(253, 253, 253);
+    margin: 5% 0 0 8%;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+.d2date::-webkit-datetime-edit
+{
+    
+    margin-left: 5%;
+}
+.d2search
+{
+    height: 8vh;
+    width:12vw;
+    background-color: white;
+    margin: 5% 0 0 5%;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: larger;
+
+}
+.d2search:hover
+{
+    background-color: rgb(202, 202, 202);
+}
+.d3
+{
+    background-color: rgb(224, 224, 224);
+    height: 45vh;
+    width:91vw;
+    margin: 0% 0 0 5%;
+
+}
+.d4
+{
+    height:28vh;
+    width:75vw;
+    background-color: rgb(162, 152, 218);
+    margin: 4% 0 0 5%;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.d5
+{
+    height:10vh;
+    width:72vw;
+    background-color: rgb(162, 152, 218);
+    margin: 1% 0 0 1%;
+    display: flex;
+    justify-content:space-between;
+}
+.d51
+{
+    margin: 0 0 0 5%;
+    display: flex;
+    align-content: end;
+}
+.d5h1
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0% 0 0 0%;
+    font-size: xx-large;
+}
+.d5h2
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0% 0 0 9%;
+    font-size: x-large;
+    font-weight: lighter;
+}
+.arrow
+{
+    font-size: larger;
+    margin: 3% 2% 0 4%;
+    font-weight: lighter;
+}
+
+.d5h3
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0% 0 0 1%;
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+.d5h4
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0% 0 0 5%;
+    font-size: xx-large;
+}
+.d5h5
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0% 0 0 1%;
+    font-size: xx-large;
+}
+.d5h6
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0% 0 0 1%;
+    font-size: xx-large;
+}
+.d5h7
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0% 0 0 1%;
+    font-size: x-large;
+}
+.d5book
+{
+    height: 7vh;
+    width:10vw;
+    background-color: red;
+    border: none;
+    border-radius: 25px;
+    font-size: larger;
+    color: white;
+    margin: 0 0% 0 0%;
+}
+.d5book:hover
+{
+  background-color: rgb(158, 1, 1);
+}
+.d5h8
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0% 0 0 1%;
+    font-size: larger;
+}
+

@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <a href="/"><i class="fa-solid mark fa-xmark"></i></a>
+    {% for msg in messages%}
+    <div class="alert error">
+        <input type="checkbox" id="alert1" />
+        <label class="close" title="close" for="alert1">
+        <i class="icon-remove"></i>
+      </label>
+        <p class="text">
+        
+        {{msg}}
+        
+        </p>
+    </div>
+    {% endfor %}
+    <div class="d1">
+        <img src="{% static 'images/logo.png' %}" class="img"alt="">
+        <form method="post">
+            {% csrf_token  %}
+        <input type="text" class="i1"name="u1" placeholder="username">
+        <input type="password" class="i2"name="p1" placeholder="password">
+        <input type="submit" value="login" class="submit"><br><br>
+    </form>
+        <a href="/register" class="a1">Register</a>
+    </div>
+    
+</body>
+</html>
